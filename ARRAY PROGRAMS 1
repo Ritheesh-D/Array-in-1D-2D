@@ -157,33 +157,62 @@ LOW
 
 
 
+------------------------------------------------------------------
+LOW
+------------------------------------------------------------------
 
+------------------------------------------------------------------
+5.WRITE A C PROGRAM TO COPY AN ARRAT TO ANOTHER ARRAY
+------------------------------------------------------------------
 
+#include <stdio.h>
+ int main()
+{
+    int a[5];
+    int b[5];
+    int s;
+    printf ("enter the number of elements:");
+    scanf("%d", &s);
+    for (int i=0; i<s; i++)
+    {
+      printf ("enter the elements:");
+      scanf("%d",&a[i]);  
+    }
+    
+    for (int i=0; i<s; i++)
+    {
+        b[i] = a[i]; 
+    }
+    printf("Array 1: ");
+    for (int i=0; i<s; i++)
+    {
+    printf("%d ", a[i]);
+    }
+    printf("\n");
+    printf("Array 2: ");
+    for (int i=0; i<s; i++)
+    { 
+    printf("%d ", b[i]); 
+    }
+printf("\n");
+return 0;
+}
 
+-------------------------------------------------------
+OUTPUT:
+enter the number of elements:3
+enter the elements:8
+enter the elements:7
+enter the elements:6
+Array 1: 8 7 6 
+Array 2: 8 7 6 
+------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+------------------------------------------------------
+BY:
+JANASRI . R
+I-YEAR CSBS
+------------------------------------------------------
 
 
 -------------------------------------------------------------
